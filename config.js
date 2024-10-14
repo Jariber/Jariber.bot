@@ -52,7 +52,7 @@ module.exports = {
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || '',
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || '',
-  BOT_INFO: process.env.BOT_INFO || '𝓠𝓾𝓮𝓮𝓷 𝓑𝓲𝓷𝓭𝔂𝓪;𝐑𝐞𝐛𝐢𝐫𝐚𝐣;https://cdn.ironman.my.id/i/vl7541.mp4',
+  BOT_INFO: process.env.BOT_INFO || '*𝐉𝐚𝐫𝐢𝐛𝐞𝐫*;𝐑𝐞𝐛𝐢𝐫𝐚𝐣;https://cdn.ironman.my.id/i/vl7541.mp4',
   WORK_TYPE: process.env.WORK_TYPE || 'private',
   DATABASE: DATABASE_URL === "./database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: "postgres", ssl: true, protocol: "postgres", dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
 };
